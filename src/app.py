@@ -33,7 +33,7 @@ st.subheader("Herramienta para predecir el abandono de empleados")
 
 val1 = st.slider("Nivel de satisfacción del empleado", min_value = 0.0, max_value = 1.0, step = 0.01)
 val2 = st.slider("Resultado última evaluación del empleado", min_value = 0.2, max_value = 1.0, step = 0.01)
-val3 = st.slider("Número de proyectos que ha realizado", min_value = 0, max_value = 8, step = 1)
+val3 = st.slider("Número de proyectos en los que ha contribuido/participado", min_value = 0, max_value = 8, step = 1)
 val4 = st.slider("Horas mensuales que pasa el trabajador en la empresa", min_value = 90.0, max_value = 320.0, step = 1.0)
 val5 = st.slider("Tiempo que lleva el empleado en la empresa", min_value = 1.0, max_value = 6.0, step = 1.0)
 val6 = st.selectbox(
