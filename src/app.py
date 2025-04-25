@@ -68,17 +68,17 @@ val9 = st.selectbox(
 #    prediction = model.predict(X_pred)[0]
 #    st.write(f"¿El empleado va a desertar? {prediction}")
 if st.button("Predecir"):
-    # Convert categorical values to numerical using the dictionaries
+    # convertir categoricas en numericas con diccionario
     dep_value = dic_dep[val6] if val6 is not None else None
     sal_value = dic_sal[val7] if val7 is not None else None
     accident_value = dic_Work_accident[val8] if val8 is not None else None
     promotion_value = dic_promotion_last_5years[val9] if val9 is not None else None
     
-    # Check if all values are selected
+    # verificar
     if None in [val6, val7, val8, val9]:
         st.error("Por favor, complete todos los campos antes de predecir")
     else:
-        # Create input array with converted values
+        # Crear el array de entrada y remodelar para la predicción
         X_pred = np.array([
             val1, val2, val3, val4, val5, 
             dep_value, sal_value, accident_value, promotion_value
