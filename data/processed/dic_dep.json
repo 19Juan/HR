@@ -1,0 +1,12 @@
+{
+    "sales": 0,
+    "accounting": 1,
+    "hr": 2,
+    "technical": 3,
+    "support": 4,
+    "management": 5,
+    "IT": 6,
+    "product_mng": 7,
+    "marketing": 8,
+    "RandD": 9
+}
