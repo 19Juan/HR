@@ -27,7 +27,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("The dropout decoder")
+st.title("THE DROPOUT DECODER")
 st.subheader("Herramienta para predecir el abandono de empleados")
 #st.write("Esta herramienta utiliza un modelo de Machine Learning para predecir si un empleado abandonará la empresa o no, basado en diferentes características del empleado.")
 st.write("Por favor, complete los siguientes campos para realizar la predicción:")
